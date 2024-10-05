@@ -1,0 +1,16 @@
+services:
+  minecraft:
+    build:
+      context: './'
+      dockerfile: './docker/minecraft/Dockerfile'
+    cap_drop: [ 'ALL' ]
+    tmpfs: [ '/tmp:exec' ]
+    stop_grace_period: 2m
+    stop_signal: 'SIGINT'
+
+    tty: true
+    stdin_open: true
+
+    restart: 'unless-stopped'
+    ports: [ '25565:25565' ]
+    volumes: [ './data:/data', './logs:/server/logs' ]

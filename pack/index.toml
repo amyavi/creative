@@ -1,0 +1,44 @@
+hash-format = "sha256"
+
+[[files]]
+file = "config/ferritecore.mixin.properties"
+hash = "6ad4ea18e41b8cb72e0d0953390969efcde7aa86b4eed032c0e6d5279598336c"
+
+[[files]]
+file = "mods/better-fabric-console.pw.toml"
+hash = "48a34bb7f5a5ccab2adfc985306178ee4ea674cdb9c360f64ed9b186b35cef59"
+metafile = true
+
+[[files]]
+file = "mods/correct-universe.pw.toml"
+hash = "d999082093a635c8deaec86afa3ef4de2fed05219d509a444d20bf44a611f99a"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "f79a3cdea893a12fa0955186df68681016f5b98d94d31e8ea59fa250465578f6"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "7167d442d5704438f8491ba69efa1c92d5719370bf63eea2c94ef4e12fbf6265"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "51d0c6f1ca98b710269f464af0bd3e130c64dfd2c5fbed2b7b1f41b7cfa09b54"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "c60d088f476eb37e15d88a762591d39874a99d80c729da813e0f4951e2906d16"
+metafile = true
+
+[[files]]
+file = "mods/moonrise-opt.pw.toml"
+hash = "fb967b25c346ca477200cc858358316af19abe9e510239872e986ef1c98c0a90"
+metafile = true
+
+[[files]]
+file = "server.properties"
+hash = "25cad4ca844e6943aef788d1ba1151e05fe252e4deb1a3617caafb39844501d5"
