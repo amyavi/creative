@@ -34,4 +34,4 @@ COPY --from=builder --chown=${UID}:${GID} /server /server
 
 WORKDIR /server
 ENTRYPOINT ["java"]
-CMD ["-Xmx4G", "-jar", "/server/fabric-server-launch.jar", "--nogui", "--universe", "/data"]
+CMD ["-Xmx1G", "-jar", "/server/fabric-server-launch.jar", "--nogui", "--universe", "/data"]

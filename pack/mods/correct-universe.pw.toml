@@ -1,15 +1,15 @@
 name = "correct-universe"
-filename = "correct-universe-1.0.0.jar"
+filename = "correct-universe-1.1.0.jar"
 side = "server"
 
 [download]
-url = "https://github.com/amyavi/correct-universe/releases/download/1.0.0/correct-universe-1.0.0.jar"
-hash-format = "sha512"
-hash = "e3b4cf43591e441dbfaf9c4155c385a04a1857644396a0f12997cdae2e6fca5a6a138bb9d1d9bcba53af44dea1b494bd43ece8f4a9f4c97acc56ec5e9c6fe298"
+url = "https://github.com/amyavi/correct-universe/releases/download/1.1.0/correct-universe-1.1.0.jar"
+hash-format = "sha256"
+hash = "74b42cc8c9fa7a2fcda84d98b4170641f530d0bf9234feed0b97fd247f008c92"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "amyavi/correct-universe"
-tag = "1.0.0"
+tag = "1.1.0"
