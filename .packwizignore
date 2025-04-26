@@ -1,4 +1,6 @@
 .dockerignore
+.env
+.env.defaults
 .git
 .gitignore
 compose.yaml

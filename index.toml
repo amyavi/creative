@@ -5,6 +5,10 @@ file = "config/lithium.properties"
 hash = "b44d81bbf1a010f704e920c70524f568aebdd952a91024854f7d4da7c772ffb1"
 
 [[files]]
+file = "config/modernfix-mixins.properties"
+hash = "923a3f1d566a094eaee1401c64fc2e19106b28440ba8b40343409fd6ecf5763a"
+
+[[files]]
 file = "mods/better-fabric-console.pw.toml"
 hash = "9afdbf2cb581444f3f4e3f1d50afee9be3230ff18bada347a75bc48ccc0219f5"
 metafile = true

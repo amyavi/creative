@@ -29,7 +29,10 @@ VOLUME /data
 VOLUME /server/logs
 
 COPY --from=builder --chown=${UID}:${GID} /server /server
-
 WORKDIR /server
+
+EXPOSE 25565/tcp
 ENTRYPOINT ["java"]
-CMD ["-Xmx1G", "-jar", "/server/fabric-server-launch.jar", "--nogui", "--universe", "/data"]
+CMD ["-XX:MaxRAMPercentage=85", \
+    "-jar", "/server/fabric-server-launch.jar", \
+    "--nogui", "--universe", "/data"]
