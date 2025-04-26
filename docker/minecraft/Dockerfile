@@ -14,6 +14,7 @@ ADD --chmod=555 \
 WORKDIR /pack
 COPY . .
 
+# Create directories with the correct permissions
 WORKDIR /server
 WORKDIR /build
 RUN --mount=type=cache,target=/build,uid=${UID},gid=${GID} \
@@ -24,13 +25,11 @@ ARG UID=1000
 ARG GID=1000
 USER "${UID}:${GID}"
 
+VOLUME ["/data", "/server/logs"]
 WORKDIR /data
-VOLUME /data
-VOLUME /server/logs
-
 COPY --from=builder --chown=${UID}:${GID} /server /server
-WORKDIR /server
 
+WORKDIR /server
 EXPOSE 25565/tcp
 ENTRYPOINT ["java"]
 CMD ["-XX:MaxRAMPercentage=85", \

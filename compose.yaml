@@ -2,8 +2,8 @@ services:
   minecraft:
     build: { dockerfile: ./docker/minecraft/Dockerfile, args: [ UID, GID ] }
     cap_drop: [ ALL ]
-
     tmpfs: [ /tmp:exec ]
+
     stop_grace_period: 2m
     stop_signal: 'SIGINT'
 
