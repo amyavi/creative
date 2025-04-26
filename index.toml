@@ -1,8 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = "config/ferritecore.mixin.properties"
-hash = "3817e94107bb1c7358beebb80b1810e822de38be430f855cf14828c38018e8e2"
+file = "config/lithium.properties"
+hash = "b44d81bbf1a010f704e920c70524f568aebdd952a91024854f7d4da7c772ffb1"
 
 [[files]]
 file = "mods/better-fabric-console.pw.toml"
