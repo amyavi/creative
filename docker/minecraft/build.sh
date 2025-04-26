@@ -1,6 +1,7 @@
 #!/bin/sh
 set -xe
 readonly PACK_FILE=/pack/pack.toml
+readonly OVERLAY_DIR=/pack/overlay
 
 java -cp /opt/packwiz-installer.jar link.infra.packwiz.installer.DevMainKt \
     --no-gui \
@@ -22,6 +23,7 @@ if [ ! -d ".fabric/remappedJars/$_REMAPPED_FOLDER_NAME" ]; then
 fi
 
 printf 'eula=true\n' > eula.txt
+[ -d "$OVERLAY_DIR" ] && cp -R "$OVERLAY_DIR"/. .
 
 # cache all libraries by running mc up until the bootstrap stage
 java -jar fabric-server-launch.jar \

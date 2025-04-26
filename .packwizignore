@@ -7,4 +7,5 @@ compose.yaml
 data/
 docker/
 logs/
+overlay/
 README.md
