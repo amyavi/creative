@@ -11,13 +11,13 @@ ADD --chmod=555 \
     --checksum=sha256:38aa82ab1ef829b7aa3f2143fcc93bba706a8e18835be731d0fdf231d274b07f \
     https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.3/fabric-installer-1.0.3.jar /opt/fabric-installer.jar
 
-COPY ./pack                         /pack
-COPY ./docker/minecraft/build.sh    /build.sh
+WORKDIR /pack
+COPY . .
 
 WORKDIR /server
 WORKDIR /build
 RUN --mount=type=cache,target=/build,uid=${UID},gid=${GID} \
-    ["/build.sh"]
+    ["/pack/docker/minecraft/build.sh"]
 
 FROM bellsoft/liberica-runtime-container:jre-21-slim-musl
 ARG UID=1000

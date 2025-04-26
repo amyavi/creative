@@ -4,6 +4,5 @@
 compose.yaml
 data/
 docker/
-!docker/minecraft/build.sh
 logs/
 README.md
