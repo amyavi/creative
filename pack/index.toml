@@ -16,7 +16,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "40aa9a34a6ae8d39fb3e8fb8d7ae2edfd17fee124300a1ea26c65f06cff89de9"
+hash = "687d9f69912b725a879bf3b4da8fb3f63eead93e4ce3e719c2be67d56b70c0b5"
 metafile = true
 
 [[files]]
@@ -26,17 +26,17 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "b8284c53c59f71991c522d190b4bedb7703a86ba27b900c335f1602aecb1510b"
+hash = "df9d69dc784ef61e99064407952d34c294f62fe1155b5260f825bd9a82e2f3a2"
 metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "348bd2931980c466e83f985747904f271c82ef7e23a4e33bbe9b882b0e7e5c94"
+hash = "a874985359eaa4317b3242136fe65b86207a6d5ab55e0b4aa8f37b90727f0487"
 metafile = true
 
 [[files]]
 file = "mods/moonrise-opt.pw.toml"
-hash = "b5cdcfd4e4331532d191fb8966cfc0492f8711a6701a2b01f80a5b294dd6c51c"
+hash = "f4a4b5ee8c7196d5506e1f5150c9bbc55e5453d33aa96fbfa759967ae9ee735e"
 metafile = true
 
 [[files]]
