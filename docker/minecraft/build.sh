@@ -23,7 +23,13 @@ if [ ! -d ".fabric/remappedJars/$_REMAPPED_FOLDER_NAME" ]; then
 fi
 
 printf 'eula=true\n' > eula.txt
-[ -d "$OVERLAY_DIR" ] && cp -R "$OVERLAY_DIR"/. .
+
+if [ -f "$OVERLAY_DIR/build.sh" ]; then
+    # shellcheck disable=SC1091
+    . "$OVERLAY_DIR/build.sh"
+elif [ -d "$OVERLAY_DIR" ]; then
+    cp -R "$OVERLAY_DIR"/. .;
+fi
 
 # cache all libraries by running mc up until the bootstrap stage
 java -jar fabric-server-launch.jar \
