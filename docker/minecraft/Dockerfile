@@ -1,4 +1,6 @@
-FROM bellsoft/liberica-runtime-container:jre-21-slim-musl AS builder
+FROM bellsoft/liberica-runtime-container:jre-21-musl AS builder
+RUN apk add --no-cache curl
+
 ARG UID=1000
 ARG GID=1000
 USER "${UID}:${GID}"
