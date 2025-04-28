@@ -1,17 +1,19 @@
 services:
   minecraft:
-    build: { dockerfile: ./docker/minecraft/Dockerfile, args: [ UID, GID ] }
+    build: { dockerfile: ./docker/minecraft/Dockerfile, args: [ UID, GID ], secrets: [ secret ] }
+
     cap_drop: [ ALL ]
     tmpfs: [ /tmp:exec ]
-
-    stop_grace_period: 2m
-    stop_signal: 'SIGINT'
-
     tty: true
     stdin_open: true
+    stop_grace_period: 2m
+    stop_signal: SIGINT
 
-    restart: 'unless-stopped'
-    ports: [ '25565:25565/tcp' ]
-    volumes: [ './data:/data:U', './logs:/server/logs:U' ]
+    restart: unless-stopped
+    ports: [ "25565:25565/tcp" ]
+    volumes: [ "./data:/data:U", "./logs:/server/logs:U" ]
 
     deploy: { resources: { limits: { cpus: "${CPUS:-2}", memory: "${MEMORY:-2G}" } } }
+
+# what it's used for? that's the secret!
+secrets: { secret: { file: /tmp/secret } }

@@ -20,6 +20,7 @@ COPY . .
 WORKDIR /server
 WORKDIR /build
 RUN --mount=type=cache,target=/build,uid=${UID},gid=${GID} \
+    --mount=type=secret,id=secret,uid=${UID},gid=${GID} \
     ["/pack/docker/minecraft/build.sh"]
 
 FROM bellsoft/liberica-runtime-container:jre-21-slim-musl
