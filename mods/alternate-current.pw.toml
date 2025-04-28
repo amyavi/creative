@@ -1,0 +1,13 @@
+name = "Alternate Current"
+filename = "alternate-current-mc1.21.2-1.9.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/r0v8vy1s/versions/DwfiGUVU/alternate-current-mc1.21.2-1.9.1.jar"
+hash-format = "sha512"
+hash = "8ed44291a8aed3e1c9750cfce85e0de679daeff7c3b1bc8f6329b41ba4570442750b8039d2d5c79c32655fc9372ea35843c60805438d33888b30e28731c39137"
+
+[update]
+[update.modrinth]
+mod-id = "r0v8vy1s"
+version = "DwfiGUVU"

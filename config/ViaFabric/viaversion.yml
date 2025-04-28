@@ -1,0 +1,9 @@
+check-for-updates: false
+enforce-secure-chat: true
+
+# Use Minecraft's packet limiter
+max-pps: -1
+tracking-period: -1
+
+# We don't have ViaBackwards
+serverside-blockconnections: false

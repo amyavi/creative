@@ -1,12 +1,21 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ViaFabric/viaversion.yml"
+hash = "560f34bc6b4120ab60a93484a4c0b405062a7ce807aa0c396724e55e3f28921d"
+
+[[files]]
 file = "config/lithium.properties"
 hash = "b44d81bbf1a010f704e920c70524f568aebdd952a91024854f7d4da7c772ffb1"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
 hash = "923a3f1d566a094eaee1401c64fc2e19106b28440ba8b40343409fd6ecf5763a"
+
+[[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "221c3fe02674f1208273f0a1a376ae3a0090dacd9093a95e79988e5a4a495d2d"
+metafile = true
 
 [[files]]
 file = "mods/better-fabric-console.pw.toml"
@@ -41,6 +50,16 @@ metafile = true
 [[files]]
 file = "mods/moonrise-opt.pw.toml"
 hash = "f4a4b5ee8c7196d5506e1f5150c9bbc55e5453d33aa96fbfa759967ae9ee735e"
+metafile = true
+
+[[files]]
+file = "mods/viafabric.pw.toml"
+hash = "d6b857d2c020eea18f40aa4406c6a35432ef7f6ff97a3033232c7dfc559fa4ac"
+metafile = true
+
+[[files]]
+file = "mods/viaversion.pw.toml"
+hash = "804c9eee6da3bee6cc5245b433a141b5208a9fcfee55098a0aca4fa539aee6d6"
 metafile = true
 
 [[files]]
